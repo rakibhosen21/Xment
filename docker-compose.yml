@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  discord-x-comment-bot:
+    build: .
+    container_name: discord_x_bot
+    restart: unless-stopped
+    volumes:
+      - ./bot_history.db:/app/bot_history.db
+      - ./bot.log:/app/bot.log
+    environment:
+      - DISCORD_TOKEN=${DISCORD_TOKEN}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - TWITTER_CONSUMER_KEY=${TWITTER_CONSUMER_KEY}
+      - TWITTER_CONSUMER_SECRET=${TWITTER_CONSUMER_SECRET}
+      - TWITTER_ACCESS_TOKEN=${TWITTER_ACCESS_TOKEN}
+      - TWITTER_ACCESS_TOKEN_SECRET=${TWITTER_ACCESS_TOKEN_SECRET}

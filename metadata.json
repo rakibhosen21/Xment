@@ -1,0 +1,6 @@
+{
+  "name": "Discord X-Bot Hub",
+  "description": "An interactive code playground, Discord commands simulator, and phone-friendly deployment workbench for a Python Discord Bot that replies to X (Twitter) posts automatically.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
